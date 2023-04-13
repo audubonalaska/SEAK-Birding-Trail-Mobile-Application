@@ -1,0 +1,7 @@
+<svg id="Group_1" data-name="Group 1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="left-32">
+    <path id="Path_1" data-name="Path 1" d="M15.307,11a10.512,10.512,0,0,0-10.5,10.5V28h1V21.5a9.51,9.51,0,0,1,9.5-9.5h6.78L19.44,14.646l.707.707L24,11.5,20.147,7.646l-.707.707L22.086,11Z" transform="translate(3.193)"/>
+    <path id="Path_2" data-name="Path 2" d="M32,0H0V32H32Z" fill="none"/>
+  </g>
+  <path id="Path_3" data-name="Path 3" d="M0,23V0" transform="translate(8.5 5.5)" fill="none" stroke="#000" stroke-width="1"/>
+</svg>

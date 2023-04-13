@@ -1,0 +1,7 @@
+QT_TRANSLATE_NOOP("AppInfoJSON", "This app uses bluetooth to scan and connect to devices.");
+QT_TRANSLATE_NOOP("AppInfoJSON", "This app needs access to camera to take a picture.");
+QT_TRANSLATE_NOOP("AppInfoJSON", "This app needs access to device location when the app is running or in the background.");
+QT_TRANSLATE_NOOP("AppInfoJSON", "This app uses your location when in use to capture your current position.");
+QT_TRANSLATE_NOOP("AppInfoJSON", "This app needs to access microphone to record audio.");
+QT_TRANSLATE_NOOP("AppInfoJSON", "This app needs access to photo library to select a photo.");
+QT_TRANSLATE_NOOP("AppInfoJSON", "This app requires Face ID permission to authenticate using facial recognition.");

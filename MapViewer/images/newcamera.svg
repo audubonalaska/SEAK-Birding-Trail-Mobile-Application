@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101">
+  <g id="Group_35" data-name="Group 35" transform="translate(-2013 -1914)">
+    <g id="Group_34" data-name="Group 34" transform="translate(2018.515 1910.806)">
+      <g id="Group_33" data-name="Group 33" transform="translate(26.562 35.524)">
+        <path id="Path_2" data-name="Path 2" d="M0,0H65.082V65.082H0Z" fill="none"/>
+        <g id="photo_camera-black-48dp" transform="translate(0 1.356)">
+          <circle id="Ellipse_7" data-name="Ellipse 7" cx="8.678" cy="8.678" r="8.678" transform="translate(23.863 23.863)"/>
+          <path id="Path_4" data-name="Path 4" d="M20.982,2,16.02,7.423h-8.6A5.439,5.439,0,0,0,2,12.847V45.388a5.439,5.439,0,0,0,5.423,5.423H50.811a5.439,5.439,0,0,0,5.423-5.423V12.847a5.439,5.439,0,0,0-5.423-5.423h-8.6L37.252,2Zm8.135,40.676A13.559,13.559,0,1,1,42.676,29.117,13.564,13.564,0,0,1,29.117,42.676Z" transform="translate(3.423 3.423)"/>
+          <path id="Path_5" data-name="Path 5" d="M0,0H65.082V65.082H0Z" fill="none"/>
+        </g>
+      </g>
+      <line id="Line_11" data-name="Line 11" x1="28.895" transform="translate(0 67.724)" fill="none" stroke="#000" stroke-width="8" stroke-dasharray="8"/>
+      <line id="Line_12" data-name="Line 12" x1="75.089" y1="0.851" transform="translate(1.985 19.694)" fill="none" stroke="#000" stroke-width="8" stroke-dasharray="8"/>
+      <line id="Line_13" data-name="Line 13" y1="60" transform="translate(8.985 11.694)" fill="none" stroke="#000" stroke-width="8" stroke-dasharray="8"/>
+      <line id="Line_14" data-name="Line 14" y1="24" transform="translate(72.985 16.694)" fill="none" stroke="#000" stroke-width="8" stroke-dasharray="8"/>
+    </g>
+    <rect id="Rectangle_9" data-name="Rectangle 9" width="101" height="101" transform="translate(2013 1914)" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,65 @@
+{
+    "access": "public",
+    "accessInformation": "Audubon Alaska, part of the National Audubon Society ",
+    "advancedSettings": null,
+    "appCategories": [
+    ],
+    "avgRating": 0,
+    "banner": null,
+    "categories": [
+    ],
+    "commentsEnabled": true,
+    "created": 1679427586000,
+    "culture": "en-us",
+    "description": "\n<p style=' margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;'>The Southeast Alaska Birding Trail is a curated list of nearly 200 sites and 18 communities across the Alaska panhandle where visitors can see diverse species, landscapes, and ecosystems. The Southeast Alaska Birding Trail Application allows you to explore everything the trail has to offer conveniently from your mobile device. \t</p>",
+    "documentation": null,
+    "extent": [
+    ],
+    "groupDesignations": null,
+    "guid": null,
+    "id": "e5e3e34871f14c829e6886e88ae261f3",
+    "industries": [
+    ],
+    "isOrgItem": true,
+    "itemControl": "admin",
+    "languages": [
+    ],
+    "largeThumbnail": null,
+    "lastViewed": -1,
+    "licenseInfo": null,
+    "listed": false,
+    "modified": 1679427599000,
+    "name": "e5e3e34871f14c829e6886e88ae261f3.zip",
+    "numComments": 1,
+    "numRatings": 0,
+    "numViews": 0,
+    "orgId": "lDFzr3JyGEn5Eymu",
+    "owner": "elmorev_audubon",
+    "ownerFolder": null,
+    "properties": null,
+    "protected": false,
+    "proxyFilter": null,
+    "scoreCompleteness": 63,
+    "screenshots": [
+    ],
+    "size": 4462807,
+    "snippet": "Explore the Southeast Alaska Birding Trail from anywhere on your mobile device. ",
+    "spatialReference": null,
+    "subInfo": 0,
+    "tags": [
+        "southeast alaska birding trail"
+    ],
+    "thumbnail": "thumbnail/thumbnail.png",
+    "title": "Southeast Alaska Birding Trail Map Viewer",
+    "type": "Native Application",
+    "typeKeywords": [
+        "API_QML",
+        "App",
+        "Application",
+        "AppStudio",
+        "Configuration",
+        "Native",
+        "qml"
+    ],
+    "url": null
+}

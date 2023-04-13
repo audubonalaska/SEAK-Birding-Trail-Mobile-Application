@@ -1,0 +1,147 @@
+{
+    "propertiesInfo": {
+        "title": "Map Viewer Properties",
+        "categoryInfos": [
+            {
+                "title": "Start Screen",
+                "propertyInfos": [
+                    {
+                        "type": "image",
+                        "label": "Background image",
+                        "hint": "Image to use for the start page background.",
+                        "name": "startBackground",
+                        "folder": "assets"
+                    },
+                    {
+                        "type": "color",
+                        "label": "Brand color",
+                        "hint": "Color to use as the primary color.",
+                        "name": "brandColor"
+                    },
+                    {
+                        "type": "number",
+                        "label": "Base font size",
+                        "hint": "Sets the base font size used throughout the app.",
+                        "name": "baseFontSize"
+                    },
+                    {
+                        "type": "file",
+                        "label": "Title font file",
+                        "name": "mediumFontTTF",
+                        "hint": "Sets the custom title font to be used throughout the app. This font will be used in headings, page titles, and so on.",
+                        "folder": "assets",
+                        "filters": [
+                            "True Type Fonts (*.ttf)"
+                        ]
+                    },
+                    {
+                        "type": "file",
+                        "label": "Text font file",
+                        "name": "regularFontTTF",
+                        "hint": "Sets the custom text font to be used throughout the app. This font will be used in descriptions of photos, about text, and so on.",
+                        "folder": "assets",
+                        "filters": [
+                            "True Type Fonts (*.ttf)"
+                        ]
+                    },
+                    {
+                        "type": "string",
+                        "label": "Feedback email",
+                        "hint": "Email address where user feedback will be sent.",
+                        "name": "feedbackEmail",
+                        "placeholder": "feedback@esri.com"
+                    },
+                    {
+                        "type": "boolean",
+                        "label": "Show disclaimer",
+                        "hint": "Shows the disclaimer text as a pop-up in the app. This text is the content from the \'Access and Use Constraints\' section of the Details tab.",
+                        "name": "showDisclaimer"
+                    }
+                ]
+            },
+            {
+                "title": "Gallery",
+                "propertyInfos": [
+                 {
+                        "type": "string",
+                        "label": "Maps query",
+                        "hint": "Enter an ArcGIS query to select web maps or mobile map packages (MMPKs) to display in the gallery. This can be any valid string such as 'USA', a valid item ID such as id:5ae9e138a17842688b0b79283a4353f6, a valid group ID such as group:52dc7e19ba2f4ea9bb513c02855535ea, or a search query such as (id:5ae9e138a17842688b0b79283a4353f6 OR id:b361c4467db248e7ad55b6e7661e5706). Note: you must sign in to view the mmpks which are not created using the ArcGIS Pro Publisher extension with anonymous use enabled.",
+                        "name": "galleryMapsQuery"
+                    },
+                    {
+                        "type": "number",
+                        "label": "Total results to show in gallery",
+                        "hint": "Enter the maximum number of web maps that should be returned from querying the portal.",
+                        "name": "maxNumberOfQueryResults"
+                    },
+                    {
+
+                        "type": "string",
+                        "label": "Portal url",
+                        "hint": "URL of the ArcGIS portal to query for web maps.",
+                        "name": "portalUrl",
+                        "placeholder": "Url"
+                    },
+                    {
+
+                        "type": "string",
+                        "label": "Basemaps group ID:",
+                        "hint": "Lists the basemaps from the provided group.",
+                        "name": "baseMapsGroupId",
+                        "placeholder": "c5af24681e0f4e479eed22ea62c5449d"
+                    },
+                    {
+                        "type": "boolean",
+                        "label": "Support secured maps",
+                        "hint": "Provides the ability to sign in to an organization for access to secured web maps and mobile map packages (MMPKs), as per the query parameters.",
+                        "name": "supportSecuredMaps"
+                    },
+                    {
+                        "type": "boolean",
+                        "label": "Skip sign in",
+                        "hint": "Provides the ability to bypass sign-in and only show publicly available web maps and MMPKs created using the ArcGIS Pro Publisher extension with anonymous use enabled. The default is true.",
+                        "name": "enableAnonymousAccess"
+                    },
+                    {
+                    "type": "boolean",
+                     "label":"Support editing",
+                     "hint": "Setting this option to true enables the editing of feature geometry, attributes, and attachments if the feature layer is editable and the user has permission to edit features.",
+                     "name": "supportEditing"
+                    },
+                    {
+                        "type": "options",
+                        "name": "mapTypes",
+                        "hint": "Specifies the type of maps displayed in the Map Viewer gallery. There are three possible values: showWebMapsOnly will only display online web maps, showOfflineMapsOnly will only display mobile map packages, and showBoth will display both web maps and MMPKs.",
+                        "label": "Maps to show in Gallery",
+                        "options": [
+                            {
+                                "label": "Online Only (web maps)",
+                                "value": "showWebMapsOnly"
+                            },
+                            {
+                                "label": "Offline Only (mobile map packages)",
+                                "value": "showOfflineMapsOnly"
+                            },
+                            {
+                                "label": "Show Both",
+                                "value": "showBoth"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "string",
+                        "label": "Portal sort field",
+                        "hint": "Specifies the name of the field used to perform the sort of web maps shown in the gallery. Possible values include title, created, type, owner, modified, avgRating, numRatings, numComments, and numViews. The default is modified.",
+                        "name": "portalSortField"
+                    },
+                    {
+                        "type": "string",
+                        "label": "Portal sort order",
+                        "hint": "Specifies the order of web maps shown in the gallery in either ascending or descending order based on the designated portalSortField. The default is desc.",
+                        "name": "portalSortOrder"
+                    }
+                ]
+            }
+        ]
+    }
+}
