@@ -350,7 +350,7 @@ Controls.BasePage {
                             pageView.hideSpatialSearch()
                             toolBarBtns.uncheckButtons()
                             searchDockItem.addDock()
-                            moreIcon.checked = false
+//                            moreIcon.checked = false
                             offlineRouteIcon.checked = false
 
                         } else {
@@ -773,7 +773,7 @@ Controls.BasePage {
                     }
 
 
-                    Controls.Icon {
+                   /* Controls.Icon {
                         id: cameraIcon
                         imageWidth: app.units(24)
                         imageHeight: app.units(24)
@@ -798,55 +798,55 @@ Controls.BasePage {
                                 screenShotsView.open()
                             }
                         }
-                    }
+                    }*/
 
 
-                    SequentialAnimation {
-                        id: flash
+//                    SequentialAnimation {
+//                        id: flash
 
-                        PropertyAnimation {
-                            id: highlight
-                            target:cameraIcon //rotation
-                            properties:"checked"
-                            //properties: "maskColor"
-                            from: false
-                            to: true
-                            duration: 1
-                        }
-
-
-
-                        PropertyAnimation {
-                            id: removehighlight
-                            target: cameraIcon
-                            properties:"checked"
-                            //properties: "maskColor"
-                            from: true
-                            to: false
-                            duration: 500
-                        }
-                        ScriptAction {
-                            script:
-                            {
-                                var cnt = screenShotsView.screenShots.count
-                                screenShotsView.takeScreenShot()
-
-                                //pageView.hideSearchItem()
-                                if(cnt === 0)
-                                {
-                                    // mapPage.header.y = - app.headerHeight
-                                    mapPage.header.y = - (app.headerHeight + (app.isNotchAvailable() ? app.notchHeight:0))
-                                    toolbarrow.visible = false
-                                    screenShotsView.listCurrentIndex = 0
-                                    toolBarBtns.uncheckAll()
-                                    screenShotsView.open()
-                                }
-                                //loadImageInCanvas();
-                            }
-                        }
+//                        PropertyAnimation {
+//                            id: highlight
+//                            target:cameraIcon //rotation
+//                            properties:"checked"
+//                            //properties: "maskColor"
+//                            from: false
+//                            to: true
+//                            duration: 1
+//                        }
 
 
-                    }
+
+//                        PropertyAnimation {
+//                            id: removehighlight
+//                            target: cameraIcon
+//                            properties:"checked"
+//                            //properties: "maskColor"
+//                            from: true
+//                            to: false
+//                            duration: 500
+//                        }
+//                        ScriptAction {
+//                            script:
+//                            {
+//                                var cnt = screenShotsView.screenShots.count
+//                                screenShotsView.takeScreenShot()
+
+//                                //pageView.hideSearchItem()
+//                                if(cnt === 0)
+//                                {
+//                                    // mapPage.header.y = - app.headerHeight
+//                                    mapPage.header.y = - (app.headerHeight + (app.isNotchAvailable() ? app.notchHeight:0))
+//                                    toolbarrow.visible = false
+//                                    screenShotsView.listCurrentIndex = 0
+//                                    toolBarBtns.uncheckAll()
+//                                    screenShotsView.open()
+//                                }
+//                                //loadImageInCanvas();
+//                            }
+//                        }
+
+
+//                    }
 
 
                     Controls.Icon {
@@ -955,170 +955,170 @@ Controls.BasePage {
 
                 }
 
-                Controls.Icon {
-                    id: moreIcon
+//                Controls.Icon {
+//                    id: moreIcon
 
-                    objectName: "more"
-                    imageSource: "../images/more.png"
-                    // checkable: true
-                    /* onCheckedChanged: {
-                            if (checked) {
-                               // offlineRouteIcon.checked = false
-                               // searchIcon.checked = false
-                                more.open()
-                            } else {
-                                more.close()
-                               // panelDockItem.removeDock()
-                            }
-                        }*/
-                    MouseArea {
-                        anchors.fill: parent
-                        // visible: showMeasureTool
-                        onClicked: {
-                            // parent.checked = true
-                            more.open()
-                        }
-                    }
-                }
-
-
+//                    objectName: "more"
+//                    imageSource: "../images/more.png"
+//                    // checkable: true
+//                    /* onCheckedChanged: {
+//                            if (checked) {
+//                               // offlineRouteIcon.checked = false
+//                               // searchIcon.checked = false
+//                                more.open()
+//                            } else {
+//                                more.close()
+//                               // panelDockItem.removeDock()
+//                            }
+//                        }*/
+//                    MouseArea {
+//                        anchors.fill: parent
+//                        // visible: showMeasureTool
+//                        onClicked: {
+//                            // parent.checked = true
+//                            more.open()
+//                        }
+//                    }
+//                }
 
             }
 
-            Controls.PopupMenu {
-                id: more
+//            Controls.PopupMenu {
+//                id: more
 
-                property string kRefresh: qsTr("Refresh")
+//                property string kRefresh: qsTr("Refresh")
 
-                defaultMargin: app.defaultMargin
-                backgroundColor: "#FFFFFF"
-                highlightColor: Qt.darker(app.backgroundColor, 1.1)
-                textColor: app.baseTextColor
-                primaryColor: app.primaryColor
+//                defaultMargin: app.defaultMargin
+//                backgroundColor: "pink"//"#FFFFFF"
+//                highlightColor: Qt.darker(app.backgroundColor, 1.1)
+//                textColor: app.baseTextColor
+//                primaryColor: app.primaryColor
 
-                Connections {
-                    target: screenSizeState
+//                Connections {
+//                    target: screenSizeState
 
-                    function onStateChanged() {
-                        more.updateMenuItemsContent()
-                    }
-                }
+//                    function onStateChanged() {
+//                        more.updateMenuItemsContent()
+//                    }
+//                }
 
-                menuItems: [
-                    {"itemLabel": more.titleCase(app.tabNames.kMapUnits)},
-                    {"itemLabel": qsTr("Graticules")},
-                    //{"itemLabel": more.titleCase(kMeasure)}
-                    //{"itemLabel": more.kRefresh},
-                    //{"itemLabel": qsTr("Sketch")}
-                ]
+//                menuItems: [
+//                    {"itemLabel": more.titleCase(app.tabNames.kMapUnits)},
+//                    {"itemLabel": qsTr("Graticules")},
+//                    //{"itemLabel": more.titleCase(kMeasure)}
+//                    //{"itemLabel": more.kRefresh},
+//                    //{"itemLabel": qsTr("Sketch")}
+//                ]
 
-                Material.primary: app.primaryColor
-                Material.background: backgroundColor
+//                Material.primary: app.primaryColor
+//                Material.background: backgroundColor
 
-                height: app.units(160)
+//                height: app.units(160)
 
-                x: app.isLeftToRight ? (parent.width - width - app.baseUnit) : (0 + app.baseUnit)
-                y: 0 + app.baseUnit
+//                x: app.isLeftToRight ? (parent.width - width - app.baseUnit) : (0 + app.baseUnit)
+//                y: 0 + app.baseUnit
 
-                onMenuItemSelected: {
-                    toolBarBtns.uncheckAll()
-                    pageView.hideOfflineRoute()
-                    switch (itemLabel) {
-                    case more.titleCase(app.tabNames.kMapUnits):
+//                onMenuItemSelected: {
+//                    console.log("click-------------")
+//                    console.log("itemLabel", itemLabel)
+//                    toolBarBtns.uncheckAll()
+//                    pageView.hideOfflineRoute()
+//                    switch (itemLabel) {
+//                    case more.titleCase(app.tabNames.kMapUnits):
 
-                        pageView.hideSearchItem()
-                        panelDockItem.addDock("mapunits")
-                        measureToolIcon.checked = false
-                        break
-                    case qsTr("Graticules"):
-                        pageView.hideSearchItem()
-                        panelDockItem.addDock("graticules")
-                        break
-                    case more.titleCase(app.tabNames.kBookmarks):
-                        bookmarksIcon.checked = !bookmarksIcon.checked
-                        break
-                    case more.titleCase(app.tabNames.kBasemaps):
-                        basemapsIcon.checked = !basemapsIcon.checked
-                        break
-                    case more.titleCase(kMeasure):
-                        measureToolIcon.checked = !showMeasureTool
-                        break
-                    case more.kRefresh:
-                        break
-                    }
-                }
+//                        pageView.hideSearchItem()
+//                        panelDockItem.addDock("mapunits")
+//                        measureToolIcon.checked = false
+//                        break
+//                    case qsTr("Graticules"):
+//                        pageView.hideSearchItem()
+//                        panelDockItem.addDock("graticules")
+//                        break
+//                    case more.titleCase(app.tabNames.kBookmarks):
+//                        bookmarksIcon.checked = !bookmarksIcon.checked
+//                        break
+//                    case more.titleCase(app.tabNames.kBasemaps):
+//                        basemapsIcon.checked = !basemapsIcon.checked
+//                        break
+//                    case more.titleCase(kMeasure):
+//                        measureToolIcon.checked = !showMeasureTool
+//                        break
+//                    case more.kRefresh:
+//                        break
+//                    }
+//                }
 
-                onVisibleChanged: {
-                    if (!visible)
-                    {
+//                onVisibleChanged: {
+//                    if (!visible)
+//                    {
 
-                    }
-                    else{
+//                    }
+//                    else{
 
-                        updateMenuItemsContent()
-                    }
-
-
-                }
-
-                function updateMenuItemsContent () {
-
-                    if (screenSizeState.state === "SMALL") {
-                        var isBasemapsVisible = (mapProperties.isMapArea !== undefined && mapProperties.isMapArea === false && mmpk.loadStatus !== Enums.LoadStatusLoaded )?true:false
-
-                        if(isBasemapsVisible || basemapsIcon.visible)
-                        {
-                            more.appendUniqueItemToMenuList({"itemLabel": more.titleCase(app.tabNames.kBasemaps)})
-                            basemapsIcon.visible = false
-                        }
-                        more.appendUniqueItemToMenuList({"itemLabel": more.titleCase(kMeasure)})
-                        measureToolIcon.visible = false
-
-                        if (mapView.map && mapView.map.bookmarks.count > 0) {
-                            // more.appendUniqueItemToMenuList({"itemLabel": more.titleCase(kMeasure)})
-                            more.removeItemFromMenuList({"itemLabel": more.titleCase(app.tabNames.kBookmarks)})
-                            if(!mapProperties.isMapArea) //&& mapProperties.isMapArea === false)
-                                bookmarksIcon.visible = true
-                            // measureToolIcon.visible = false
-
-                        } else {
-                            more.appendUniqueItemToMenuList({"itemLabel": more.titleCase(app.tabNames.kBookmarks)})
-                            //more.removeItemFromMenuList({"itemLabel": more.titleCase(kMeasure)})
+//                        updateMenuItemsContent()
+//                    }
 
 
-                            bookmarksIcon.visible = false
-                            //measureToolIcon.visible = true
-                        }
-                    } else {
-                        if(hasMenuItem({"itemLabel": more.titleCase(kBasemaps)}))
-                        {
-                            more.removeItemFromMenuList({"itemLabel": more.titleCase(kBasemaps)})
-                            basemapsIcon.visible = true
-                        }
-                        more.removeItemFromMenuList({"itemLabel": more.titleCase(kMeasure)})
-                        if (mapView.map && mapView.map.bookmarks.count > 0) {
-                            more.removeItemFromMenuList({"itemLabel": more.titleCase(app.tabNames.kBookmarks)})
-                            if(!mapProperties.isMapArea) // && mapProperties.isMapArea === false)
-                                bookmarksIcon.visible = true
-                        }
-                        else{
-                            more.appendUniqueItemToMenuList({"itemLabel": more.titleCase(app.tabNames.kBookmarks)})
-                            bookmarksIcon.visible = false
-                        }
+//                }
+
+//                function updateMenuItemsContent () {
+
+//                    if (screenSizeState.state === "SMALL") {
+//                        var isBasemapsVisible = (mapProperties.isMapArea !== undefined && mapProperties.isMapArea === false && mmpk.loadStatus !== Enums.LoadStatusLoaded )?true:false
+
+//                        if(isBasemapsVisible || basemapsIcon.visible)
+//                        {
+//                            more.appendUniqueItemToMenuList({"itemLabel": more.titleCase(app.tabNames.kBasemaps)})
+//                            basemapsIcon.visible = false
+//                        }
+//                        more.appendUniqueItemToMenuList({"itemLabel": more.titleCase(kMeasure)})
+//                        measureToolIcon.visible = false
+
+//                        if (mapView.map && mapView.map.bookmarks.count > 0) {
+//                            // more.appendUniqueItemToMenuList({"itemLabel": more.titleCase(kMeasure)})
+//                            more.removeItemFromMenuList({"itemLabel": more.titleCase(app.tabNames.kBookmarks)})
+//                            if(!mapProperties.isMapArea) //&& mapProperties.isMapArea === false)
+//                                bookmarksIcon.visible = true
+//                            // measureToolIcon.visible = false
+
+//                        } else {
+//                            more.appendUniqueItemToMenuList({"itemLabel": more.titleCase(app.tabNames.kBookmarks)})
+//                            //more.removeItemFromMenuList({"itemLabel": more.titleCase(kMeasure)})
 
 
-                        measureToolIcon.visible = true
-                    }
-                    more.updateMenu()
+//                            bookmarksIcon.visible = false
+//                            //measureToolIcon.visible = true
+//                        }
+//                    } else {
+//                        if(hasMenuItem({"itemLabel": more.titleCase(kBasemaps)}))
+//                        {
+//                            more.removeItemFromMenuList({"itemLabel": more.titleCase(kBasemaps)})
+//                            basemapsIcon.visible = true
+//                        }
+//                        more.removeItemFromMenuList({"itemLabel": more.titleCase(kMeasure)})
+//                        if (mapView.map && mapView.map.bookmarks.count > 0) {
+//                            more.removeItemFromMenuList({"itemLabel": more.titleCase(app.tabNames.kBookmarks)})
+//                            if(!mapProperties.isMapArea) // && mapProperties.isMapArea === false)
+//                                bookmarksIcon.visible = true
+//                        }
+//                        else{
+//                            more.appendUniqueItemToMenuList({"itemLabel": more.titleCase(app.tabNames.kBookmarks)})
+//                            bookmarksIcon.visible = false
+//                        }
 
-                }
 
-                function titleCase(str) {
-                    return str.toLowerCase().split(" ").map(function(word) {
-                        return (word.charAt(0).toUpperCase() + word.slice(1));
-                    }).join(" ");
-                }
-            }
+//                        measureToolIcon.visible = true
+//                    }
+//                    more.updateMenu()
+
+//                }
+
+//                function titleCase(str) {
+//                    return str.toLowerCase().split(" ").map(function(word) {
+//                        return (word.charAt(0).toUpperCase() + word.slice(1));
+//                    }).join(" ");
+//                }
+//            }
         }
 
         Behavior on y {
@@ -2036,6 +2036,21 @@ Controls.BasePage {
 
                 }
 
+                ViewpointExtent {
+                    id: seAKviewpointExtent
+                    extent: seakEnvelope
+                }
+
+                Envelope {
+                    id: seakEnvelope
+                    xMax: -15902737
+                    xMin: -14309946
+                    yMin: 7255676
+                    yMax: 8432227
+                    spatialReference: SpatialReference {
+                        wkid: 3857
+                    }
+                }
 
                 function addSubLayer(sublayerurl,canZoom)
                 {
@@ -2874,8 +2889,9 @@ Controls.BasePage {
                         if (mapView && mapView.map) {
                             if(mapView && mapView.map && mapView.map.initialViewpoint)
                             {
-                                var mapExtent = ArcGISRuntimeEnvironment.createObject("EnvelopeBuilder", { geometry: mapView.map.initialViewpoint.extent })
+                                var mapExtent = ArcGISRuntimeEnvironment.createObject("EnvelopeBuilder", { geometry: seakEnvelope })
                                 mapView.center = mapExtent.center
+                                mapView.map.minScale = 10000000
                             }
                         }
 
@@ -2890,7 +2906,7 @@ Controls.BasePage {
                             mmpk.locatorTask.load()
                         }
                         measurePanel.setUnitByScale(mapView.mapScale)
-                        more.updateMenuItemsContent()
+//                        more.updateMenuItemsContent()
                         // keepTrackOfOriginalLayerVisForFilter()
 
                         infoIcon.checked = true
@@ -4120,6 +4136,7 @@ Controls.BasePage {
                         loadMmpkMapInMapView (0)
                         //mapView.mapInitialized = true
                         for (var i=0; i<maps.length; i++) {
+                            maps[i].maxExtent = seakEnvelope;
                             if(maps[i].item)
                             {
                                 offlineMaps.append ({
@@ -6024,7 +6041,7 @@ Controls.BasePage {
 
                     pageView.hidePanelItem()
                     pageView.hideSearchItem()
-                    moreIcon.checked = false
+//                    moreIcon.checked = false
 
                     identifyProperties.clearHighlightInLayer()
                     if(isInShapeCreateMode)
